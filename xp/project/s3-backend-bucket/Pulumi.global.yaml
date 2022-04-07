@@ -1,0 +1,7 @@
+encryptionsalt: v1:wXfjgewlDKk=:v1:Lc9rr0e5gwAYLytm:zKniEmezjarRbsknPtcWhdZBksNaoA==
+config:
+  aws:region: {{ cookiecutter.aws_region }}
+  be-bucket-{{ cookiecutter.aws_account }}-{{ cookiecutter.aws_region }}:bucket_name: {{ cookiecutter.aws_account }}-{{ cookiecutter.aws_region }}-cloud-dev
+  be-bucket-{{ cookiecutter.aws_account }}-{{ cookiecutter.aws_region }}:backend_subkey: cloud-dev/pulumi/prj
+  pulumi:disable-default-providers:
+    - '*'

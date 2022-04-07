@@ -1,0 +1,5 @@
+{
+  "pulumi_project_name": "be-bucket-{{ cookiecutter.aws_account }}-{{ cookiecutter.aws_region }}",
+  "organization": "g",
+  "backend": "local"
+}
