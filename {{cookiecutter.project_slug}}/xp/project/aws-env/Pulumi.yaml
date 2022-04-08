@@ -1,7 +1,0 @@
-description: AWS project core resources (VPC etc)
-name: aws-env
-runtime:
-  name: python
-  options:
-    virtualenv: ../../../.venv
-options: {}

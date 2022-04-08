@@ -1,4 +1,3 @@
-
 # Copyright (c) 2022 Sam McKelvie
 #
 # See LICENSE file accompanying this package.

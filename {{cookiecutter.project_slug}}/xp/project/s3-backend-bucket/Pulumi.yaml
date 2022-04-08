@@ -1,6 +1,0 @@
-description: Github-hosted pulumi backend for S3 bucket used in other backends
-name: be-bucket-{{ cookiecutter.aws_account }}-{{ cookiecutter.aws_region }}
-runtime:
-  name: python
-  options:
-    virtualenv: ../../../.venv

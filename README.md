@@ -12,7 +12,6 @@ Table of contents
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Usage](#usage)
-  * [Command line](#command-line)
   * [API](api)
 * [Known issues and limitations](#known-issues-and-limitations)
 * [Getting help](#getting-help)
@@ -35,7 +34,7 @@ Installation
 
 ### From PyPi
 
-The current released version of `secret-kv` can be installed with
+The current released version of `aws-dev-box-template` can be installed with
 
 ```bash
 pip3 install aws-dev-box-template
@@ -90,7 +89,7 @@ Pull requests welcome.
 License
 -------
 
-aws-dev-box-template is distributed under the terms of the [MIT License](https://opensource.org/licenses/MIT).  The license applies to this file and other files in the [Git repository](https://github.com/sammck/aws-dev-box-template) hosting this file.
+`aws-dev-box-template` is distributed under the terms of the [MIT License](https://opensource.org/licenses/MIT).  The license applies to this file and other files in the [Git repository](https://github.com/sammck/aws-dev-box-template) hosting this file.
 
 Authors and history
 -------------------
