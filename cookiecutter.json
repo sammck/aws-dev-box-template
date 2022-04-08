@@ -1,4 +1,5 @@
 {
+  "project_slug": "cctest",
   "aws_account": "?",
   "aws_region": "us-west-2",
   "root_dns_zone": "mckelvie.org"

@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "aws-dev-box-template"
+version = "0.1.0"
+description = "Python package \"aws-dev-box-template\""
+authors = ["dev@mckelvie.org"]
+license = "MIT"
+keywords = []
+readme = "README.md"
+homepage = "https://github.com/sammck/aws-dev-box-template"
+repository = "https://github.com/sammck/aws-dev-box-template.git"
+
