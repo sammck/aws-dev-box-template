@@ -1,0 +1,12 @@
+{
+  "name": "s3",
+  "options": {
+    "aws_account": "492598163938",
+    "aws_region": "us-west-2",
+    "default_organization": "g",
+    "includes_organization": false,
+    "includes_project": false,
+    "s3_bucket_stack": "s3_backend:global"
+  },
+  "uri": "s3://492598163938-us-west-2-xpulumi-2/xpulumi-2/prj"
+}

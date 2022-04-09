@@ -1,0 +1,3 @@
+config:
+  aws:region: us-west-2
+  be-492598163938-us-west-2-2:backend_url: s3://492598163938-us-west-2-xpulumi-2/xpulumi-2/prj

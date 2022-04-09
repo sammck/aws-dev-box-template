@@ -30,7 +30,7 @@ Installation
 
 ### Prerequisites
 
-**Python**: Python 3.7+ is required. See your OS documentation for instructions.
+**Python**: Python 3.8+ is required. See your OS documentation for instructions.
 
 ### From PyPi
 

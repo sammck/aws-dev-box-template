@@ -1,0 +1,7 @@
+description: Simple locally-backed pulumi project that manages an S3 backend used
+  by all other projects
+name: be-492598163938-us-west-2-2
+runtime:
+  name: python
+  options:
+    virtualenv: ../../../.venv

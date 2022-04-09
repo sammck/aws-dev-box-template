@@ -12,6 +12,10 @@ repository = "https://github.com/sammck/aws-dev-box-template.git"
 [tool.poetry.dependencies]
 python = "^3.8"
 
+[tool.poetry.dependencies.xpulumi]
+git = "https://github.com/sammck/xpulumi.git"
+branch = "main"
+
 [tool.poetry.dev-dependencies]
 mypy = "^0.931"
 dunamai = "^1.9.0"
