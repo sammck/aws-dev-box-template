@@ -1,0 +1,6 @@
+description: EC2 Dev box
+name: devbox
+runtime:
+  name: python
+  options:
+    virtualenv: ../../../.venv

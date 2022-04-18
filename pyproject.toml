@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "aws-dev-box-template"
 version = "0.1.0"
-description = "Python package \"aws-dev-box-template\""
+description = "Python package aws-dev-box-template"
 authors = ["Sam McKelvie <dev@mckelvie.org>"]
 license = "MIT"
 keywords = []
@@ -11,10 +11,7 @@ repository = "https://github.com/sammck/aws-dev-box-template.git"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-
-[tool.poetry.dependencies.xpulumi]
-git = "https://github.com/sammck/xpulumi.git"
-branch = "main"
+xpulumi = {git = "https://github.com/sammck/xpulumi.git", branch = "main"}
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.931"
@@ -34,7 +31,34 @@ upload_to_release = true
 build_command = "pip install poetry && poetry build"
 
 [tool.pylint."MESSAGES CONTROL"]
-disable = ["wrong-import-order", "duplicate-code", "too-many-arguments", "missing-function-docstring", "import-outside-toplevel", "too-few-public-methods", "missing-class-docstring", "unused-import", "too-many-locals", "unused-argument", "invalid-name", "no-self-use", "global-statement", "broad-except", "too-many-branches", "too-many-statements", "exec-used", "ungrouped-imports", "subprocess-popen-preexec-fn", "multiple-statements", "too-many-public-methods", "missing-module-docstring", "too-many-instance-attributes", "too-many-nested-blocks", "unneeded-not", "unnecessary-lambda"]
+disable = [
+    "wrong-import-order",
+    "duplicate-code",
+    "too-many-arguments",
+    "missing-function-docstring",
+    "import-outside-toplevel",
+    "too-few-public-methods",
+    "missing-class-docstring",
+    "unused-import",
+    "too-many-locals",
+    "unused-argument",
+    "invalid-name",
+    "no-self-use",
+    "global-statement",
+    "broad-except",
+    "too-many-branches",
+    "too-many-statements",
+    "exec-used",
+    "ungrouped-imports",
+    "subprocess-popen-preexec-fn",
+    "multiple-statements",
+    "too-many-public-methods",
+    "missing-module-docstring",
+    "too-many-instance-attributes",
+    "too-many-nested-blocks",
+    "unneeded-not",
+    "unnecessary-lambda",
+]
 
 [tool.pylint.FORMAT]
 indent-after-paren = 4

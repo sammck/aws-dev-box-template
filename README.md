@@ -4,7 +4,7 @@ aws-dev-box-template: A Python package
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Latest release](https://img.shields.io/github/v/release/sammck/aws-dev-box-template.svg?style=flat-square&color=b44e88)](https://github.com/sammck/aws-dev-box-template/releases)
 
-Python package "aws-dev-box-template"
+Python package aws-dev-box-template
 
 Table of contents
 -----------------

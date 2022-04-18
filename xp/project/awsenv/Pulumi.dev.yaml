@@ -1,0 +1,8 @@
+encryptionsalt: v1:7u0jYx/Dm0A=:v1:K/kPR5sDjHC+lGSS:NbFfFkezAyJwd6xOVaDjCYPUMSLdJg==
+config:
+  aws:region: us-west-2
+  awsenv:root_zone_name: mckelvie.org
+  awsenv:subzone_name: dev
+  awsenv:vpc_cidr: 10.78.0.0/16
+  awsenv:vpc_n_azs: "3"
+  awsenv:vpc_n_potential_subnets: "16"

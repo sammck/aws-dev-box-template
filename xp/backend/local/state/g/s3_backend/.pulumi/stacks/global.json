@@ -1,0 +1,160 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "global",
+        "latest": {
+            "manifest": {
+                "time": "2022-04-17T18:11:33.557316163-07:00",
+                "magic": "e25eefe266b10326ce11e9fe46a8957f08bb6b12bb97ab2c030e99fdb1d355a5",
+                "version": "v3.29.1"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:W7SYLQ/jUv4=:v1:kiW6+15miWHPWCnV:ByHjRD3of5BeseBvPn1DKt26IylUwg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:global::s3_backend::pulumi:pulumi:Stack::s3_backend-global",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "aws_account": "492598163938",
+                        "aws_full_subaccount": "492598163938",
+                        "aws_region": "us-west-2",
+                        "backend_bucket": "492598163938-us-west-2-xpulumi",
+                        "backend_subkey": "xpulumi-be",
+                        "backend_url": "s3://492598163938-us-west-2-xpulumi/xpulumi-be"
+                    },
+                    "sequenceNumber": 1
+                },
+                {
+                    "urn": "urn:pulumi:global::s3_backend::pulumi:providers:aws::aws-us-west-2",
+                    "custom": true,
+                    "id": "72b2aac4-126b-4d68-910d-e5169a5320a8",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "region": "us-west-2",
+                        "skipCredentialsValidation": "true",
+                        "skipGetEc2Platforms": "true",
+                        "skipMetadataApiCheck": "true",
+                        "skipRegionValidation": "true",
+                        "version": "4.38.1"
+                    },
+                    "outputs": {
+                        "region": "us-west-2",
+                        "skipCredentialsValidation": "true",
+                        "skipGetEc2Platforms": "true",
+                        "skipMetadataApiCheck": "true",
+                        "skipRegionValidation": "true",
+                        "version": "4.38.1"
+                    },
+                    "parent": "urn:pulumi:global::s3_backend::pulumi:pulumi:Stack::s3_backend-global",
+                    "propertyDependencies": {
+                        "region": null,
+                        "skipCredentialsValidation": null,
+                        "skipGetEc2Platforms": null,
+                        "skipMetadataApiCheck": null,
+                        "skipRegionValidation": null
+                    },
+                    "sequenceNumber": 1
+                },
+                {
+                    "urn": "urn:pulumi:global::s3_backend::pulumi:providers:aws::aws-us-east-1",
+                    "custom": true,
+                    "id": "d438a596-5d9a-47ba-9bd3-554fc1081020",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "true",
+                        "skipGetEc2Platforms": "true",
+                        "skipMetadataApiCheck": "true",
+                        "skipRegionValidation": "true",
+                        "version": "4.38.1"
+                    },
+                    "outputs": {
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "true",
+                        "skipGetEc2Platforms": "true",
+                        "skipMetadataApiCheck": "true",
+                        "skipRegionValidation": "true",
+                        "version": "4.38.1"
+                    },
+                    "parent": "urn:pulumi:global::s3_backend::pulumi:pulumi:Stack::s3_backend-global",
+                    "propertyDependencies": {
+                        "region": null,
+                        "skipCredentialsValidation": null,
+                        "skipGetEc2Platforms": null,
+                        "skipMetadataApiCheck": null,
+                        "skipRegionValidation": null
+                    },
+                    "sequenceNumber": 1
+                },
+                {
+                    "urn": "urn:pulumi:global::s3_backend::aws:s3/bucket:Bucket::bucket",
+                    "custom": true,
+                    "id": "492598163938-us-west-2-xpulumi",
+                    "type": "aws:s3/bucket:Bucket",
+                    "inputs": {
+                        "__defaults": [
+                            "acl",
+                            "forceDestroy"
+                        ],
+                        "acl": "private",
+                        "bucket": "492598163938-us-west-2-xpulumi",
+                        "forceDestroy": false,
+                        "tags": {
+                            "Owner": "dev@mckelvie.org",
+                            "PulumiStack": "s3_backend-global",
+                            "XStack": "s3_backend:global",
+                            "__defaults": []
+                        }
+                    },
+                    "outputs": {
+                        "accelerationStatus": "",
+                        "acl": "private",
+                        "arn": "arn:aws:s3:::492598163938-us-west-2-xpulumi",
+                        "bucket": "492598163938-us-west-2-xpulumi",
+                        "bucketDomainName": "492598163938-us-west-2-xpulumi.s3.amazonaws.com",
+                        "bucketRegionalDomainName": "492598163938-us-west-2-xpulumi.s3.us-west-2.amazonaws.com",
+                        "corsRules": [],
+                        "forceDestroy": false,
+                        "grants": [],
+                        "hostedZoneId": "Z3BJ6K6RIION7M",
+                        "id": "492598163938-us-west-2-xpulumi",
+                        "lifecycleRules": [],
+                        "loggings": [],
+                        "objectLockConfiguration": null,
+                        "region": "us-west-2",
+                        "replicationConfiguration": null,
+                        "requestPayer": "BucketOwner",
+                        "serverSideEncryptionConfiguration": null,
+                        "tags": {
+                            "Owner": "dev@mckelvie.org",
+                            "PulumiStack": "s3_backend-global",
+                            "XStack": "s3_backend:global"
+                        },
+                        "tagsAll": {
+                            "Owner": "dev@mckelvie.org",
+                            "PulumiStack": "s3_backend-global",
+                            "XStack": "s3_backend:global"
+                        },
+                        "versioning": {
+                            "enabled": false,
+                            "mfaDelete": false
+                        },
+                        "website": null
+                    },
+                    "parent": "urn:pulumi:global::s3_backend::pulumi:pulumi:Stack::s3_backend-global",
+                    "provider": "urn:pulumi:global::s3_backend::pulumi:providers:aws::aws-us-west-2::72b2aac4-126b-4d68-910d-e5169a5320a8",
+                    "propertyDependencies": {
+                        "bucket": null,
+                        "tags": null
+                    },
+                    "sequenceNumber": 1
+                }
+            ]
+        }
+    }
+}

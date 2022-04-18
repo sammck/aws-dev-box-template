@@ -1,0 +1,107 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: Remote Attach",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "${workspaceFolder}",
+                    ".": "${workspaceFolder}",
+                    "~": "${env:HOME}",
+                }
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "xpulumi test",
+            "type": "python",
+            "request": "launch",
+            "module": "xpulumi",
+            "args": [
+                "--tb",
+                "test"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "backend create local",
+            "type": "python",
+            "request": "launch",
+            "module": "xpulumi",
+            "args": [
+                "--tb",
+                "backend",
+                "create",
+                "local"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "stack output",
+            "type": "python",
+            "request": "launch",
+            "module": "xpulumi.pulumi_cli",
+            "args": [
+                "stack",
+                "output",
+            ],
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}/xp/project/dev-box"
+        },
+        {
+            "name": "pulumi commandline parser",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/xpulumi/pulumi_cli/help_metadata.py",
+            "args": [
+                "parse",
+                "--",
+                "-s",
+                "foo",
+                "stack",
+                "export"
+            ],
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}/xpulumi/pulumi_cli"
+        },
+        {
+            "name": "init-env",
+            "type": "python",
+            "request": "launch",
+            "module": "xpulumi",
+            "args": [
+                "--tb",
+                "init-env"
+            ],
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        }
+        {
+            "name": "pulumi up devbox",
+            "type": "python",
+            "request": "launch",
+            "module": "xpulumi.pulumi_cli",
+            "args": [
+                "up"
+            ],
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}/xp/project/devbox"
+        }
+    ]
+}

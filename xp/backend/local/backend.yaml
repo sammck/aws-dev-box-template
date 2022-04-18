@@ -1,0 +1,6 @@
+name: local
+options:
+  default_organization: g
+  includes_organization: false
+  includes_project: false
+uri: file://./state

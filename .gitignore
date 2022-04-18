@@ -70,6 +70,6 @@ venv.bak/
 dmypy.json
 .pyre/
 /trash/
-/.xppulumi/
+/.xpulumi/
 /.secret-kv/
 /.local/

@@ -3,6 +3,6 @@
 # See LICENSE file accompanying this package.
 #
 
-from xpulumi.standard_stacks.s3_backend_v1 import load_stack
+from xpulumi.standard_stacks.dev_box_v1 import load_stack
 
 load_stack()

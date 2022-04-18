@@ -66,14 +66,14 @@ dev = ["pip-tools (==6.5.1)", "pytest (==7.1.1)", "flake8 (==4.0.1)", "tox (==3.
 
 [[package]]
 name = "boto3"
-version = "1.21.37"
+version = "1.21.42"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 3.6"
 
 [package.dependencies]
-botocore = ">=1.24.37,<1.25.0"
+botocore = ">=1.24.42,<1.25.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.5.0,<0.6.0"
 
@@ -82,8 +82,8 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "boto3-stubs"
-version = "1.21.37"
-description = "Type annotations for boto3 1.21.37 generated with mypy-boto3-builder 7.5.8"
+version = "1.21.42"
+description = "Type annotations for boto3 1.21.42 generated with mypy-boto3-builder 7.5.8"
 category = "main"
 optional = false
 python-versions = ">=3.6"
@@ -416,7 +416,7 @@ python-versions = "*"
 
 [[package]]
 name = "botocore"
-version = "1.24.37"
+version = "1.24.42"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
@@ -432,8 +432,8 @@ crt = ["awscrt (==0.13.8)"]
 
 [[package]]
 name = "botocore-stubs"
-version = "1.24.37"
-description = "Type annotations for botocore 1.24.37 generated with mypy-boto3-builder 7.5.8"
+version = "1.24.42"
+description = "Type annotations for botocore 1.24.42 generated with mypy-boto3-builder 7.5.8"
 category = "main"
 optional = false
 python-versions = ">=3.6"
@@ -551,6 +551,22 @@ python-versions = ">=2.7, !=3.0.*"
 graph = ["objgraph (>=1.7.2)"]
 
 [[package]]
+name = "dnspython"
+version = "2.2.1"
+description = "DNS toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.extras]
+dnssec = ["cryptography (>=2.6,<37.0)"]
+curio = ["curio (>=1.2,<2.0)", "sniffio (>=1.1,<2.0)"]
+doh = ["h2 (>=4.1.0)", "httpx (>=0.21.1)", "requests (>=2.23.0,<3.0.0)", "requests-toolbelt (>=0.9.1,<0.10.0)"]
+idna = ["idna (>=2.1,<4.0)"]
+trio = ["trio (>=0.14,<0.20)"]
+wmi = ["wmi (>=1.5.1,<2.0.0)"]
+
+[[package]]
 name = "docutils"
 version = "0.18.1"
 description = "Docutils -- Python Documentation Utilities"
@@ -642,7 +658,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 
 [[package]]
 name = "importlib-resources"
-version = "5.6.0"
+version = "5.7.1"
 description = "Read resources from Python packages"
 category = "main"
 optional = false
@@ -780,8 +796,8 @@ typing-extensions = ">=4.1.0"
 
 [[package]]
 name = "mypy-boto3-ec2"
-version = "1.21.34"
-description = "Type annotations for boto3.EC2 1.21.34 service generated with mypy-boto3-builder 7.5.8"
+version = "1.21.41"
+description = "Type annotations for boto3.EC2 1.21.41 service generated with mypy-boto3-builder 7.5.8"
 category = "main"
 optional = false
 python-versions = ">=3.6"
@@ -802,8 +818,8 @@ typing-extensions = ">=4.1.0"
 
 [[package]]
 name = "mypy-boto3-rds"
-version = "1.21.34"
-description = "Type annotations for boto3.RDS 1.21.34 service generated with mypy-boto3-builder 7.5.8"
+version = "1.21.42"
+description = "Type annotations for boto3.RDS 1.21.42 service generated with mypy-boto3-builder 7.5.8"
 category = "main"
 optional = false
 python-versions = ">=3.6"
@@ -895,7 +911,7 @@ test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock 
 
 [[package]]
 name = "project-init-tools"
-version = "0.1.3"
+version = "0.1.7"
 description = "Tools to help initialize/setup github projects, install prerequisites, etc."
 category = "main"
 optional = false
@@ -918,7 +934,7 @@ tomlkit = "^0.10.1"
 type = "git"
 url = "https://github.com/sammck/project-init-tools.git"
 reference = "main"
-resolved_reference = "e893758b1667549d408d7658afc589ef1cf34212"
+resolved_reference = "a1c40c2adaa405b7b3c4759f24f5c8d4fb03ea46"
 
 [[package]]
 name = "protobuf"
@@ -930,7 +946,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pulumi"
-version = "3.28.0"
+version = "3.29.1"
 description = "Pulumi's Python SDK"
 category = "main"
 optional = false
@@ -948,6 +964,19 @@ six = ">=1.12.0"
 name = "pulumi-aws"
 version = "4.38.1"
 description = "A Pulumi package for creating and managing Amazon Web Services (AWS) cloud resources."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+parver = ">=0.2.1"
+pulumi = ">=3.0.0,<4.0.0"
+semver = ">=2.8.1"
+
+[[package]]
+name = "pulumi-random"
+version = "4.4.2"
+description = "A Pulumi package to safely use randomness in Pulumi programs."
 category = "main"
 optional = false
 python-versions = "*"
@@ -1012,14 +1041,14 @@ testutil = ["gitpython (>3)"]
 
 [[package]]
 name = "pyparsing"
-version = "3.0.7"
-description = "Python parsing module"
+version = "3.0.8"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.6.8"
 
 [package.extras]
-diagrams = ["jinja2", "railroad-diagrams"]
+diagrams = ["railroad-diagrams", "jinja2"]
 
 [[package]]
 name = "python-dateutil"
@@ -1050,7 +1079,7 @@ yaml = ["PyYaml (>=5.2)"]
 
 [[package]]
 name = "python-semantic-release"
-version = "7.27.1"
+version = "7.28.1"
 description = "Automatic Semantic Versioning for Python projects"
 category = "main"
 optional = false
@@ -1259,6 +1288,17 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "tabulate"
+version = "0.8.9"
+description = "Pretty-print tabular data"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+widechars = ["wcwidth"]
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -1321,7 +1361,7 @@ urllib3 = ">=1.26.0"
 
 [[package]]
 name = "types-pyyaml"
-version = "6.0.5"
+version = "6.0.6"
 description = "Typing stubs for PyYAML"
 category = "main"
 optional = false
@@ -1329,7 +1369,7 @@ python-versions = "*"
 
 [[package]]
 name = "types-requests"
-version = "2.27.16"
+version = "2.27.19"
 description = "Typing stubs for requests"
 category = "main"
 optional = false
@@ -1340,7 +1380,7 @@ types-urllib3 = "<1.27"
 
 [[package]]
 name = "types-urllib3"
-version = "1.26.11"
+version = "1.26.13"
 description = "Typing stubs for urllib3"
 category = "main"
 optional = false
@@ -1348,11 +1388,11 @@ python-versions = "*"
 
 [[package]]
 name = "typing-extensions"
-version = "4.1.1"
-description = "Backported and Experimental Type Hints for Python 3.6+"
+version = "4.2.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [[package]]
 name = "urllib3"
@@ -1401,7 +1441,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "xpulumi"
-version = "1.0.0"
+version = "1.0.18"
 description = "Tools to make Pulumi more usable"
 category = "main"
 optional = false
@@ -1416,6 +1456,7 @@ boto3-type-annotations = "^0.3.1"
 cloud-init-gen = "^1.1.0"
 colorama = "^0.4.4"
 debugpy = "^1.6.0"
+dnspython = "^2.2.1"
 importlib-resources = "^5.4.0"
 jq = "^1.2.2"
 mypy = "^0.931"
@@ -1423,12 +1464,14 @@ packaging = "^21.3"
 project-init-tools = {git = "https://github.com/sammck/project-init-tools.git", branch = "main"}
 pulumi = "^3.26.1"
 pulumi-aws = "^4.38.1"
+pulumi-random = "^4.4.2"
 pycryptodome-test-vectors = "^1.0.7"
 pycryptodomex = "^3.14.1"
 python-semantic-release = "^7.25.2"
 requests = "^2.27.1"
 "ruamel.yaml" = "^0.17.21"
 secret-kv = "^1.3.0"
+tabulate = "^0.8.9"
 types-PyYAML = "^6.0.5"
 types-requests = "^2.27.12"
 xdg = "^5.1.1"
@@ -1438,7 +1481,7 @@ yq = "^2.14.0"
 type = "git"
 url = "https://github.com/sammck/xpulumi.git"
 reference = "main"
-resolved_reference = "9055996186aa75df12998fea8b7618be5556800d"
+resolved_reference = "ced496d1c7e4858c5a44e09cb4fc0027ae6e1cae"
 
 [[package]]
 name = "yq"
@@ -1496,24 +1539,24 @@ bleach = [
     {file = "bleach-5.0.0.tar.gz", hash = "sha256:c6d6cc054bdc9c83b48b8083e236e5f00f238428666d2ce2e083eaa5fd568565"},
 ]
 boto3 = [
-    {file = "boto3-1.21.37-py3-none-any.whl", hash = "sha256:1e845aa92b3ad70b954329b98835135c28b3000e322ff8d3fc46a956bdb6e94b"},
-    {file = "boto3-1.21.37.tar.gz", hash = "sha256:013ba57295f05da141e364191dd46f4086e8fe3eb83a3cd09730eeb684ffbab3"},
+    {file = "boto3-1.21.42-py3-none-any.whl", hash = "sha256:895fb88c69be78f82cfee58a79c97a3ad8d4a2a1209041a411d7d6b9fc5393e4"},
+    {file = "boto3-1.21.42.tar.gz", hash = "sha256:bcb541175a7d190dd919a0af0e807ee6e9d26f135551e741b10d94343f2d7588"},
 ]
 boto3-stubs = [
-    {file = "boto3-stubs-1.21.37.tar.gz", hash = "sha256:1fa208a4a2d91550b031e82037397eb9a5fcfd0295f4795bc412219e86be1e8b"},
-    {file = "boto3_stubs-1.21.37-py3-none-any.whl", hash = "sha256:df790210ef992dfcee47d4d83a848f017380b58266cba6a50cfd8fbe6e6839ef"},
+    {file = "boto3-stubs-1.21.42.tar.gz", hash = "sha256:a89bd988bbb37adac9e8f63a933943526b3038279f2a1204dfaf34815f0b7cc1"},
+    {file = "boto3_stubs-1.21.42-py3-none-any.whl", hash = "sha256:231e7b8c73b62ad0be72ea534d27d3015d0907be1d17365c8858e39cc4fa1d86"},
 ]
 boto3-type-annotations = [
     {file = "boto3_type_annotations-0.3.1-py3-none-any.whl", hash = "sha256:52e007ac2ab792abee42aaac3019c2acc9781a84e79e1283a5bc64164225435e"},
     {file = "boto3_type_annotations-0.3.1.tar.gz", hash = "sha256:e5682093d035e935c8189f24c601ef6eaccedfcd1e642ba7922429d093b1b885"},
 ]
 botocore = [
-    {file = "botocore-1.24.37-py3-none-any.whl", hash = "sha256:21e164a213beca36033c46026bffa62f2ee2cd2600777271f9a551fb34dba006"},
-    {file = "botocore-1.24.37.tar.gz", hash = "sha256:70c48c4ae3c2b9ec0ca025385979d01f4c7dae4d9a61c82758d4cf7caa7082cd"},
+    {file = "botocore-1.24.42-py3-none-any.whl", hash = "sha256:14aee41c8bf59d2dd2d89e8751fa37d3c95dcb92707d1966aa02697e914c1417"},
+    {file = "botocore-1.24.42.tar.gz", hash = "sha256:a2baa9484bbaee96ef312c049b8e360badcab58329e487b57567644a571b5f4a"},
 ]
 botocore-stubs = [
-    {file = "botocore-stubs-1.24.37.tar.gz", hash = "sha256:4221071ea3fea9b5f6840ea848c74fd1ab04d64b9e7acd4371b30468d21fbc9f"},
-    {file = "botocore_stubs-1.24.37-py3-none-any.whl", hash = "sha256:beec7e6a6dee17d70519a1cd7446738eeaf78009362b394ff9f075a0e6229fae"},
+    {file = "botocore-stubs-1.24.42.tar.gz", hash = "sha256:5ef6601232322171db9240207368efa1e816715d79c45fdbccad3d2dbb2853d0"},
+    {file = "botocore_stubs-1.24.42-py3-none-any.whl", hash = "sha256:09e1bea5d6ee9e7b02d1ab65945e62eb5017ed79d0121ede435fc0098ebd4035"},
 ]
 certifi = [
     {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"},
@@ -1637,6 +1680,10 @@ dill = [
     {file = "dill-0.3.4-py2.py3-none-any.whl", hash = "sha256:7e40e4a70304fd9ceab3535d36e58791d9c4a776b38ec7f7ec9afc8d3dca4d4f"},
     {file = "dill-0.3.4.zip", hash = "sha256:9f9734205146b2b353ab3fec9af0070237b6ddae78452af83d2fca84d739e675"},
 ]
+dnspython = [
+    {file = "dnspython-2.2.1-py3-none-any.whl", hash = "sha256:a851e51367fb93e9e1361732c1d60dab63eff98712e503ea7d92e6eccb109b4f"},
+    {file = "dnspython-2.2.1.tar.gz", hash = "sha256:0f7569a4a6ff151958b64304071d370daa3243d15941a7beedf0c9fe5105603e"},
+]
 docutils = [
     {file = "docutils-0.18.1-py2.py3-none-any.whl", hash = "sha256:23010f129180089fbcd3bc08cfefccb3b890b0050e1ca00c867036e9d161b98c"},
     {file = "docutils-0.18.1.tar.gz", hash = "sha256:679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06"},
@@ -1711,8 +1758,8 @@ importlib-metadata = [
     {file = "importlib_metadata-4.11.3.tar.gz", hash = "sha256:ea4c597ebf37142f827b8f39299579e31685c31d3a438b59f469406afd0f2539"},
 ]
 importlib-resources = [
-    {file = "importlib_resources-5.6.0-py3-none-any.whl", hash = "sha256:a9dd72f6cc106aeb50f6e66b86b69b454766dd6e39b69ac68450253058706bcc"},
-    {file = "importlib_resources-5.6.0.tar.gz", hash = "sha256:1b93238cbf23b4cde34240dd8321d99e9bf2eb4bc91c0c99b2886283e7baad85"},
+    {file = "importlib_resources-5.7.1-py3-none-any.whl", hash = "sha256:e447dc01619b1e951286f3929be820029d48c75eb25d265c28b92a16548212b8"},
+    {file = "importlib_resources-5.7.1.tar.gz", hash = "sha256:b6062987dfc51f0fcb809187cffbd60f35df7acb4589091f154214af6d0d49d3"},
 ]
 invoke = [
     {file = "invoke-1.7.0-py3-none-any.whl", hash = "sha256:a5159fc63dba6ca2a87a1e33d282b99cea69711b03c64a35bb4e1c53c6c4afa0"},
@@ -1854,16 +1901,16 @@ mypy-boto3-dynamodb = [
     {file = "mypy_boto3_dynamodb-1.21.34-py3-none-any.whl", hash = "sha256:3edfdd25befc8efccba9807bf720d54d06dc948e434976ae3dd7f47189d3319c"},
 ]
 mypy-boto3-ec2 = [
-    {file = "mypy-boto3-ec2-1.21.34.tar.gz", hash = "sha256:1cd73077adef376e824e0ae4949d010e0b8678c04fd5b7f9aec0ecdcfed5b9e3"},
-    {file = "mypy_boto3_ec2-1.21.34-py3-none-any.whl", hash = "sha256:86f43e7d0d44987ef69c755058dadefc95aebf23b9e13c899512c913121211ca"},
+    {file = "mypy-boto3-ec2-1.21.41.tar.gz", hash = "sha256:fa25555eff000d876d9fc529600426837e5726a3f8bf99e15fbb90d3e6347773"},
+    {file = "mypy_boto3_ec2-1.21.41-py3-none-any.whl", hash = "sha256:41ad919af9df25d8cb797a1f79772abfae9ef85c04fdfa5330ef875418345be2"},
 ]
 mypy-boto3-lambda = [
     {file = "mypy-boto3-lambda-1.21.35.tar.gz", hash = "sha256:ea5c6f39875ffc705053f5e08230f26b05b85eff33c88aac25981e4e2747dcea"},
     {file = "mypy_boto3_lambda-1.21.35-py3-none-any.whl", hash = "sha256:3f4f752ee81b075675caec9b52294061cf6556210f2cfbfd3d8a88ac662d64fb"},
 ]
 mypy-boto3-rds = [
-    {file = "mypy-boto3-rds-1.21.34.tar.gz", hash = "sha256:4f5ffaac0e4e227f7287aa87fd928ec185238dfdad0a2387abbb5b1993d4c6ce"},
-    {file = "mypy_boto3_rds-1.21.34-py3-none-any.whl", hash = "sha256:1af1575eae9bb02af3a5a54d7df0e41c80ab8d633757a458f58d159af430e742"},
+    {file = "mypy-boto3-rds-1.21.42.tar.gz", hash = "sha256:2c5cb08cac9e1a7618bc974677b61a0c5e623dd49215128d959215fefe4b0f2d"},
+    {file = "mypy_boto3_rds-1.21.42-py3-none-any.whl", hash = "sha256:eb3c4d6d2634bc9fe11a26c0ef963bc6689da1fb2be7891cbba15bbc0bdc5d5c"},
 ]
 mypy-boto3-s3 = [
     {file = "mypy-boto3-s3-1.21.34.tar.gz", hash = "sha256:817bcc0be1999272fe8d81bd6500f5fdda9184cc17ad9bd71bc0af08563175ca"},
@@ -1921,10 +1968,13 @@ protobuf = [
     {file = "protobuf-3.20.0.tar.gz", hash = "sha256:71b2c3d1cd26ed1ec7c8196834143258b2ad7f444efff26fdc366c6f5e752702"},
 ]
 pulumi = [
-    {file = "pulumi-3.28.0-py2.py3-none-any.whl", hash = "sha256:ea80a1048f49f4ad80f39563e36b58068c56b8b0ef8b3fc027e9ed4620e150de"},
+    {file = "pulumi-3.29.1-py2.py3-none-any.whl", hash = "sha256:f19804ada2aefde8975f1304a22f5acb6163ed9d1451073bdd0e4da0fe27691f"},
 ]
 pulumi-aws = [
     {file = "pulumi_aws-4.38.1.tar.gz", hash = "sha256:0cd807241e574c726bc8355c545ed2f04bf8c84c1f6c4d5f13afd715a599bf8d"},
+]
+pulumi-random = [
+    {file = "pulumi_random-4.4.2.tar.gz", hash = "sha256:5e970099a292d8f15e649b890795221992990335ae60336675e1005302b5cdf5"},
 ]
 pycparser = [
     {file = "pycparser-2.21-py2.py3-none-any.whl", hash = "sha256:8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"},
@@ -1971,8 +2021,8 @@ pylint = [
     {file = "pylint-2.13.5.tar.gz", hash = "sha256:dab221658368c7a05242e673c275c488670144123f4bd262b2777249c1c0de9b"},
 ]
 pyparsing = [
-    {file = "pyparsing-3.0.7-py3-none-any.whl", hash = "sha256:a6c06a88f252e6c322f65faf8f418b16213b51bdfaece0524c1c1bc30c63c484"},
-    {file = "pyparsing-3.0.7.tar.gz", hash = "sha256:18ee9022775d270c55187733956460083db60b37d0d0fb357445f3094eed3eea"},
+    {file = "pyparsing-3.0.8-py3-none-any.whl", hash = "sha256:ef7b523f6356f763771559412c0d7134753f037822dad1b16945b7b846f7ad06"},
+    {file = "pyparsing-3.0.8.tar.gz", hash = "sha256:7bf433498c016c4314268d95df76c81b842a4cb2b276fa3312cfb1e1d85f6954"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
@@ -1983,8 +2033,8 @@ python-gitlab = [
     {file = "python_gitlab-3.3.0-py3-none-any.whl", hash = "sha256:ab1fd4c98a206f22f01f832bc58f24a09952089b7bbf67cdaee6308e7797503f"},
 ]
 python-semantic-release = [
-    {file = "python-semantic-release-7.27.1.tar.gz", hash = "sha256:a7a11a9250e392ee699408dca916b11789be07656143746084331b4b1d88bde5"},
-    {file = "python_semantic_release-7.27.1-py3-none-any.whl", hash = "sha256:20c804784a3e64a5d072704e2d18e0c858092e95c4a98b385e93fcab30998439"},
+    {file = "python-semantic-release-7.28.1.tar.gz", hash = "sha256:d7f82b3d4c06b304d07689b8a1c7d0d448ff07c2ab81cd810c4f2f900f24c599"},
+    {file = "python_semantic_release-7.28.1-py3-none-any.whl", hash = "sha256:319c3e811d6e10bc3f0e967419eae0e5e9ba1e6745aa2fd94dd24e3995541ca2"},
 ]
 pywin32-ctypes = [
     {file = "pywin32-ctypes-0.2.0.tar.gz", hash = "sha256:24ffc3b341d457d48e8922352130cf2644024a4ff09762a2261fd34c36ee5942"},
@@ -2103,6 +2153,10 @@ smmap = [
 sqlcipher3 = [
     {file = "sqlcipher3-0.4.5.tar.gz", hash = "sha256:b31f76d8f06c08bb366afcde9ad8306f7969fd39fc9818b088bbfebff9862cd8"},
 ]
+tabulate = [
+    {file = "tabulate-0.8.9-py3-none-any.whl", hash = "sha256:d7c013fe7abbc5e491394e10fa845f8f32fe54f8dc60c6622c6cf482d25d47e4"},
+    {file = "tabulate-0.8.9.tar.gz", hash = "sha256:eb1d13f25760052e8931f2ef80aaf6045a6cceb47514db8beab24cded16f13a7"},
+]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
@@ -2124,20 +2178,20 @@ twine = [
     {file = "twine-3.8.0.tar.gz", hash = "sha256:8efa52658e0ae770686a13b675569328f1fba9837e5de1867bfe5f46a9aefe19"},
 ]
 types-pyyaml = [
-    {file = "types-PyYAML-6.0.5.tar.gz", hash = "sha256:464e050914f3d1d83a8c038e1cf46da5cb96b7cd02eaa096bcaa03675edd8a2e"},
-    {file = "types_PyYAML-6.0.5-py3-none-any.whl", hash = "sha256:2fd21310870addfd51db621ad9f3b373f33ee3cbb81681d70ef578760bd22d35"},
+    {file = "types-PyYAML-6.0.6.tar.gz", hash = "sha256:53c4379c7c8199d4fc5098060c51d58d38283e93d7f27bb80c8abe663456317d"},
+    {file = "types_PyYAML-6.0.6-py3-none-any.whl", hash = "sha256:d3d99e0a37a2fd37f35a9e4b4f794034192dac2aea2efc84c1bcde00ed66e150"},
 ]
 types-requests = [
-    {file = "types-requests-2.27.16.tar.gz", hash = "sha256:c8010c18b291a7efb60b1452dbe12530bc25693dd657e70c62803fcdc4bffe9b"},
-    {file = "types_requests-2.27.16-py3-none-any.whl", hash = "sha256:2437a5f4d16c0c8bd7539a8126d492b7aeb41e6cda670d76b286c7f83a658d42"},
+    {file = "types-requests-2.27.19.tar.gz", hash = "sha256:795e378117088d1e4bf41a2c01a153b73d6ea40aa9d7c0ac753abde84c0d3a8f"},
+    {file = "types_requests-2.27.19-py3-none-any.whl", hash = "sha256:c6c5384677d98f212516de50c4b2c38ef659b93008fbc5bb4b81726138bc8485"},
 ]
 types-urllib3 = [
-    {file = "types-urllib3-1.26.11.tar.gz", hash = "sha256:24d64e441168851eb05f1d022de18ae31558f5649c8f1117e384c2e85e31315b"},
-    {file = "types_urllib3-1.26.11-py3-none-any.whl", hash = "sha256:bd0abc01e9fb963e4fddd561a56d21cc371b988d1245662195c90379077139cd"},
+    {file = "types-urllib3-1.26.13.tar.gz", hash = "sha256:40f8fb5e8cd7d57e8aefdee3fdd5e930aa1a1bb4179cdadd55226cea588af790"},
+    {file = "types_urllib3-1.26.13-py3-none-any.whl", hash = "sha256:ff7500641824f881b2c7bde4cc57e6c3abf03d1e005bae83aca752e77213a5da"},
 ]
 typing-extensions = [
-    {file = "typing_extensions-4.1.1-py3-none-any.whl", hash = "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"},
-    {file = "typing_extensions-4.1.1.tar.gz", hash = "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42"},
+    {file = "typing_extensions-4.2.0-py3-none-any.whl", hash = "sha256:6657594ee297170d19f67d55c05852a874e7eb634f4f753dbd667855e07c1708"},
+    {file = "typing_extensions-4.2.0.tar.gz", hash = "sha256:f1c24655a0da0d1b67f07e17a5e6b2a105894e6824b92096378bb3668ef02376"},
 ]
 urllib3 = [
     {file = "urllib3-1.26.9-py2.py3-none-any.whl", hash = "sha256:44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"},

@@ -1,1 +1,7 @@
-{}
+license_type: MIT
+friendly_name: Sam McKelvie
+legal_name: Samuel J. McKelvie
+email_address: dev@mckelvie.org
+aws_region: us-west-2
+cloud_subaccount:
+root_zone_name: mckelvie.org

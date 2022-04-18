@@ -1,3 +1,4 @@
+encryptionsalt: v1:W7SYLQ/jUv4=:v1:kiW6+15miWHPWCnV:ByHjRD3of5BeseBvPn1DKt26IylUwg==
 config:
   aws:region: us-west-2
-  be-492598163938-us-west-2-2:backend_url: s3://492598163938-us-west-2-xpulumi-2/xpulumi-2/prj
+  s3_backend:backend_url: s3://492598163938-us-west-2-xpulumi/xpulumi-be

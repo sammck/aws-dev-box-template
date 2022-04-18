@@ -1,0 +1,5 @@
+config:
+  aws:region: us-west-2
+  devbox:ec2_user_password:
+    secure: v1:PzK6te05gqTbH73t:IZn497uG4VNlcFaKxZz8Unr4ZiZV0jRBptqAvhA=
+encryptionsalt: v1:j4ApcX0XSR0=:v1:PsJrT8isEbuCWdAD:4m3dkanDuIth5WCtCoVaFzeQzQ+Z0Q==
